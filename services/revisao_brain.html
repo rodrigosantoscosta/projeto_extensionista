@@ -34,47 +34,20 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 </style>
-<body class="body">
-  <nav class="navbar navbar-expand-md">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">
-        <img id="logo_icon" src="/img/logo_icon_big.jpg" class="rounded-circle d-inline-block align-text-top" style="width: 60px;" alt="Updown Bike Logo">
-      </a>
-  
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="/index.html">Página inicial</a>
-          </li>
-  
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Serviços
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/services/revisao_rockshox.html">Revisão RockShox</a></li>
-              <li><a class="dropdown-item" href="/services/revisao_fox.html">Revisão Fox</a></li>
-              <li><a class="dropdown-item" href="/services/revisao_lefty.html">Revisão Lefty Cannondale</a></li>
-              <li><a class="dropdown-item" href="/services/revisao_brain.html">Revisão Specialized Brain</a></li>
-            </ul>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="#">Agendamento</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
+  <div id="navbar-container"></div>
 
-  <h1>Revisão Specialized Brain</h1>
-
+  <script>
+    fetch('/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+  
   <div class="container-sm">
+    <h1>Revisão Specialized Brain</h1>
+    
     <p>
       A tecnologia Brain da Specialized exige manutenção especializada para garantir seu funcionamento inteligente e eficiente. Na Updown Bike, realizamos a revisão completa do sistema, com desmontagem do conjunto, substituição de retentores, anéis de vedação e fluidos, além da sangria e calibração do módulo de inércia. Seguimos os padrões técnicos da Specialized e utilizamos ferramentas e peças homologadas para assegurar que a suspensão atue com precisão — firme nos trechos lisos e ativa nas irregularidades — mantendo a performance original da bike em alto nível.
     </p>

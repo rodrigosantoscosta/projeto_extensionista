@@ -34,76 +34,47 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 </style>
-<body class="body">
-  <nav class="navbar navbar-expand-md">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">
-        <img id="logo_icon" src="./img/logo_icon_big.jpg" class="rounded-circle d-inline-block align-text-top" style="width: 60px;" alt="Updown Bike Logo">
-      </a>
+<body>
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch('/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
   
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="/index.html">Página inicial</a>
-          </li>
-  
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Serviços
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/services/revisao_rockshox.html">Revisão RockShox</a></li>
-              <li><a class="dropdown-item" href="/services/revisao_fox.html">Revisão Fox</a></li>
-              <li><a class="dropdown-item" href="/services/revisao_lefty.html">Revisão Lefty Cannondale</a></li>
-              <li><a class="dropdown-item" href="/services/revisao_brain.html">Revisão Specialized Brain</a></li>
-            </ul>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="#">Agendamento</a>
-          </li>
-        </ul>
+  <section id="location_section" class="container-md mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Endereço:</h3>
+        <p> 
+          Avenida Presidente Epitácio Pessoa, 5088<br> 
+          João Pessoa - PB, 58045-000 - Cabo Branco<br>
+          CEP: 58045-000
+        </p>  
       </div>
-    </div>
-  </nav>
-    <div class="img_description container-md">
-      
-    </div>
-  
-    <section id="location_section" class="container-md mt-5">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Endereço:</h3>
-          <p> 
-            Avenida Presidente Epitácio Pessoa, 5088<br> 
-            João Pessoa - PB, 58045-000 - Cabo Branco<br>
-            CEP: 58045-000
-          </p>  
-        </div>
     
-        <!-- Embed Google Maps -->
-        <div class="col-md-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4727.152874212914!2d-34.8250531!3d-7.1196285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18eb8822c3%3A0x7c131b12ac2a92f8!2sUpdown%20bike!5e1!3m2!1spt-BR!2sbr!4v1746029072326!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <!-- Embed Google Maps -->
+      <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4727.152874212914!2d-34.8250531!3d-7.1196285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18eb8822c3%3A0x7c131b12ac2a92f8!2sUpdown%20bike!5e1!3m2!1spt-BR!2sbr!4v1746029072326!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact_section" class="container-md mt-5">
-      <h3>Contato:</h3>
-      <p>
-        Telefone: (83) 9999-9999<br>
-      </p>
+  <section id="contact_section" class="container-md mt-5">
+    <h3>Contato:</h3>
+    <p>
+      Telefone: (83) 9999-9999<br>
+    </p>
 
-       <!-- Instagram Embed -->
-      <div class="mt-3">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/updownbike.pb/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
-      </div>
-    </section>
+      <!-- Instagram Embed -->
+    <div class="mt-3">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/updownbike.pb/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
+    </div>
+  </section>
 
     
     <!-- Instagram Embed Script -->
