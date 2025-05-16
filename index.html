@@ -9,6 +9,10 @@
 </head>
 
 <style>
+body {
+  overflow-x: hidden;
+}
+
 .navbar{
   background-color: #df1923e5;
 }
@@ -32,7 +36,24 @@
 #whatsapp-button img {
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 60px;
 }
+
+.brand-logo {
+  max-width: 80px;
+  height: 60px;
+  max-height: 50px; 
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    max-width: 100px;
+  }
+}
+
 </style>
 <body>
   <div id="navbar-container"></div>
@@ -52,11 +73,6 @@
           Desde 2021, a Updown Bike é uma oficina de bicicletas com especialidade na manuntenção de suspensões. Somos centro técnico autorizado pelas principais marcas do mercado — SRAM , RockShox, Garmin, Zipp , Fox ,Magura, Cannondale, Soul Cycles, Quarq  e outras mais — garantindo peças originais, diagnóstico preciso e serviço de qualidade para seu equipamento.
         </p>
       </div> 
-      <img id="introduction_img" src="./img/local_de_trabalho.jpeg" width="20%">
-
-      <img src="./img/repair_kits.jpg" width="20%" alt="Fox Repair Kits">
-      <img src="./img/tools.jpg" width="20%" alt="Tools">
-      <div class="embed_insta">
     </div>
   </div>      
     
@@ -64,60 +80,73 @@
       
     </div>
 
-    <section class="brand-banner py-4 bg-light">
-        <div class="row justify-content-center align-items-center g-4">
-          <div class="col-4 col-md-2"><img src="/img/logos/sram_logo.svg" class="img-fluid" alt="SRAM" width="50%"></div>
-          <div class="col-4 col-md-2"><img src="/img/logos/rockshox_logo.png" class="img-fluid" alt="RockShox"  width="50%"></div>
-          <div class="col-4 col-md-2"><img src="/img/logos/fox_logo.png" class="img-fluid" alt="Fox Racing Shox"  width="50%"></div>
-          <div class="col-4 col-md-2"><img src="/img/logos/magura_logo.png" class="img-fluid" alt="Magura"  width="50%"></div>
-          <div class="col-4 col-md-2"><img src="/img/logos/cannondale_logo.png" class="img-fluid" alt="Cannondale"  width="50%"></div>
-          <div class="col-4 col-md-2"><img src="/img/logos/zipp_logo.png" class="img-fluid" alt="Zipp"  width="50%"></div>
+  <section class="brand-banner py-3 bg-light">
+    <div class="container">
+      <div class="row justify-content-center align-items-center g-3 text-center">
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/sram_logo.svg" class="brand-logo img-fluid" alt="SRAM">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/rockshox_logo.png" class="brand-logo img-fluid" alt="RockShox">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/fox_logo.png" class="brand-logo img-fluid" alt="Fox Racing Shox" width="25%">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/magura_logo.png" class="brand-logo img-fluid" alt="Magura">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/cannondale_logo.png" class="brand-logo img-fluid" alt="Cannondale">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/zipp_logo.png" class="brand-logo img-fluid" alt="Zipp">
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+
     
   
-    <section id="location_section" class="container-md mt-5">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Endereço:</h3>
-          <p> 
-            Avenida Presidente Epitácio Pessoa, 5088<br> 
-            João Pessoa - PB, 58045-000 - Cabo Branco<br>
-            CEP: 58045-000
-          </p>  
-        </div>
-    
-        <!-- Embed Google Maps -->
-        <div class="col-md-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4727.152874212914!2d-34.8250531!3d-7.1196285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18eb8822c3%3A0x7c131b12ac2a92f8!2sUpdown%20bike!5e1!3m2!1spt-BR!2sbr!4v1746029072326!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+  <section id="location_section" class="container-md mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Endereço:</h3>
+        <p> 
+          Avenida Presidente Epitácio Pessoa, 5088<br> 
+          João Pessoa - PB, 58045-000 - Cabo Branco<br>
+          CEP: 58045-000
+        </p>  
       </div>
-    </section>
+  
+      <!-- Embed Google Maps -->
+    <div class="col-md-6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4727.152874212914!2d-34.8250531!3d-7.1196285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18eb8822c3%3A0x7c131b12ac2a92f8!2sUpdown%20bike!5e1!3m2!1spt-BR!2sbr!4v1746029072326!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
 
-    <section id="contact_section" class="container-md mt-5">
-      <h3>Contato:</h3>
-      <p>
-        Telefone: (83) 9999-9999<br>
-      </p>
+  <section id="contact_section" class="container-md mt-5">
+    <h3>Contato:</h3>
+    <p>
+      Telefone: (83) 9999-9999<br>
+    </p>
 
-       <!-- Instagram Embed -->
-      <div class="mt-3">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/updownbike.pb/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
-      </div>
-    </section>
+      <!-- Instagram Embed -->
+    <div class="mt-3">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/updownbike.pb/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
+    </div>
+  </section>
 
-    
     <!-- Instagram Embed Script -->
-    <script async src="//www.instagram.com/embed.js"></script>
+  <script async src="//www.instagram.com/embed.js"></script>
 
-    <!-- Botão WhatsApp -->
-    <a href="https://wa.me/5511999999999" target="_blank" id="whatsapp-button">
-      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="80" height="80">
-    </a>
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5511999999999" target="_blank" id="whatsapp-button">
+    <img class ="img-fluid"src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp Button">
+  </a>
 
-    <!-- Import Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <!-- Import Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
 </body>
 </html>
