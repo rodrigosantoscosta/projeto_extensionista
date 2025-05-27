@@ -1,108 +1,79 @@
 <style>
-  /* Hover do dropdown na seção apenas no desktop */
-  @media (min-width: 768px) {
-    .nav-item.dropdown:hover .dropdown-menu {
-      display: block;
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-      transition: all 0.3s ease;
-    }
-  }
-
-  .dropdown-menu {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-    margin-top: 0;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  }
-
-  .navbar-nav .nav-link {
+  /* Estilo para centralizar a logo na navbar */
+  .navbar {
     position: relative;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-bottom: 5px;
-    transition: color 0.3s ease;
+    justify-content: center;
   }
 
-  /* Traço abaixo do texto dos itens no nav */
-  .navbar-nav .nav-link::after {
-    content: "";
+  .navbar-brand-centered {
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
     bottom: 0;
-    width: 0%;
-    height: 2px;
-    background-color: black;
-    transition: width 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  /* Hover no menu, mostra o traço abaixo */
-  .navbar-nav .nav-link:hover::after {
-    width: 100%;
+  /* Garante que os menus fiquem nas pontas */
+  .navbar-nav-start,
+  .navbar-nav-end {
+    flex: 1;
   }
 
-  /* Pra telas menores */
+  .navbar-nav-start {
+    justify-content: start;
+  }
+
+  .navbar-nav-end {
+    justify-content: end;
+  }
+
   @media (max-width: 767.98px) {
-    .dropdown-menu {
-      position: static !important;
-      float: none;
-      opacity: 1;
-      visibility: visible;
+    .navbar-brand-centered {
+      position: static;
       transform: none;
-      box-shadow: none;
-    }
-
-    .navbar-nav .nav-link::after,
-    .navbar-nav .nav-link:hover::after {
-      width: 0%; /* Remove o traço no mobile */
+      margin: 10px auto;
     }
   }
-
-  /* Remove a setinha padrão do Bootstrap no dropdown */
-  .nav-link.dropdown-toggle::after {
-    display: none !important;
-}
 </style>
 
-<nav class="navbar navbar-expand-md">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">
-        <img id="logo_icon" src="/img/logo_icon_big.jpg" class="rounded-circle d-inline-block align-text-top" style="width: 60px;" alt="Updown Bike Logo">
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse " id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto text-md-start text-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="/index.html">Página inicial</a>
-          </li>
-  
-          <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Serviços
-            </a>
-            <ul class="dropdown-menu ">
-              <li><a class="dropdown-item " href="/services/revisao_rockshox.html">Revisão RockShox</a></li>
-              <li><a class="dropdown-item" href="/services/revisao_fox.html">Revisão Fox</a></li>
-              <li><a class="dropdown-item" href="/services/revisao_lefty.html">Revisão Lefty Cannondale</a></li>
-              <li><a class="dropdown-item" href="/services/revisao_brain.html">Revisão Specialized Brain</a></li>
-            </ul>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="/agendamento.html">Agendamento</a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-md bg-white border-bottom py-3">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <a class="navbar-brand navbar-brand-centered" href="/index.html">
+      <img src="/img/updown_logo_red.png" alt="Updown Bike Logo" style="height: 50px;">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto navbar-nav-start text-md-start text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Página inicial</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Serviços
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/services/revisao_rockshox.html">Revisão RockShox</a></li>
+            <li><a class="dropdown-item" href="/services/revisao_fox.html">Revisão Fox</a></li>
+            <li><a class="dropdown-item" href="/services/revisao_lefty.html">Revisão Lefty Cannondale</a></li>
+            <li><a class="dropdown-item" href="/services/revisao_brain.html">Revisão Specialized Brain</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto navbar-nav-end text-md-end text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/agendamento.html">Agendamento</a>
+      </li> 
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
