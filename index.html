@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,72 +17,95 @@
     <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Updown Bike</title>
+
+  <!-- Import BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <!-- Importa icones do BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
+  
 </head>
 
 <style>
-body {
-  overflow-x: hidden;
-}
-
-.navbar{
-  background-color: #df1923e5;
-}
-
-#introduction_img{
-  border-radius: 15px; border: 2px solid #ccc;
-}
-
-#introduction img{
-  border-radius: 15px; border: 2px solid #ccc;
-}
-
-#whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-#whatsapp-button img {
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  width: 60px;
-  height: 60px;
-}
-
-.brand-logo {
-  max-width: 100px;
-  max-height: 80px; 
-  padding:10px;
-  object-fit: contain;
-  transition: transform 0.2s ease;
-}
-
-@media (min-width: 768px) {
-  .brand-logo {
-    max-width: 150px;
+  body {
+    overflow-x: hidden;
   }
-}
 
-/* Banner hero */
-.hero-banner h1 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 4rem;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-
-.hero-banner p,
-#introduction_resume {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  font-weight: 300;
-}
+  .navbar {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
 
 
+  #introduction_img {
+    border-radius: 15px;
+    border: 2px solid #ccc;
+  }
+
+  #introduction img {
+    border-radius: 15px;
+    border: 2px solid #ccc;
+  }
+
+  #whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  #whatsapp-button img {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 60px;
+    height: 60px;
+  }
+
+  .brand-logo {
+    max-width: 100px;
+    max-height: 80px;
+    padding: 10px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+  }
+
+  @media (min-width: 768px) {
+    .brand-logo {
+      max-width: 150px;
+    }
+  }
+
+  /* Banner hero */
+  .hero-banner h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .hero-banner p,
+  #introduction_resume {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
 </style>
+
 <body>
   <div id="navbar-container"></div>
 
@@ -94,113 +118,129 @@ body {
   </script>
 
 
-<section class="hero-banner d-flex align-items-center text-white" style="background-image: url('/img/ciclistas_montanha.jpg'); background-size: cover; background-position:       center; height: 100vh;">
-  <div class="container text-center">
-    <img src="/img/updown_logo_white.png" alt="Logo Updown" class="img-fluid mb-4" style="max-width: 300px;">
+  <section class="hero-banner d-flex align-items-center text-white"
+    style="background-image: url('/img/ciclistas_montanha.jpg'); background-size: cover; background-position:       center; height: 100vh;">
+    <div class="container text-center">
+      <img src="/img/updown_logo_white.png" alt="Logo Updown" class="img-fluid mb-4" style="max-width: 300px;">
 
-    <p class="lead fw-medium text-shadow">Desde 2021, a Updown Bike é uma oficina de bicicletas com especialidade na manuntenção de suspensões. Somos centro técnico autorizado pelas principais marcas do mercado — SRAM , RockShox, Garmin, Zipp , Fox ,Magura, Cannondale, Soul Cycles, Quarq  e outras mais — garantindo peças originais, diagnóstico preciso e serviço de qualidade para seu equipamento.</p>
-
-  </div>
-</section>
-
-<section class="cards_bs py-5 bg-light">
-  <div class="container">
-    <div class="row text-center">
-
-      <div class="col-md-4 mb-4">
-        <div class="p-4 bg-white rounded shadow-sm h-100">
-          <i class="bi bi-tools fs-1 text-danger"></i>
-          <h5 class="mt-3 text-danger">Manutenção Especializada</h5>
-          <p>Equipe técnica com experiência em suspensões de alto desempenho.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="p-4 bg-white rounded shadow-sm h-100">
-          <i class="bi bi-shield-check fs-1 text-danger"></i>
-          <h5 class="mt-3 text-danger">Centro Autorizado</h5>
-          <p>Certificação com as principais marcas do mercado.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="p-4 bg-white rounded shadow-sm h-100">
-          <i class="bi bi-award fs-1 text-danger"></i>
-          <h5 class="mt-3 text-danger">Peças Originais</h5>
-          <p>Reposição com peças de qualidade e procedência.</p>
-        </div>
-      </div>
+      <p class="lead fw-medium text-shadow">Desde 2021, a Updown Bike é uma oficina de bicicletas com especialidade na
+        manuntenção de suspensões. Somos centro técnico autorizado pelas principais marcas do mercado — SRAM , RockShox,
+        Garmin, Zipp , Fox ,Magura, Cannondale, Soul Cycles, Quarq e outras mais — garantindo peças originais,
+        diagnóstico preciso e serviço de qualidade para seu equipamento.</p>
 
     </div>
-  </div>
-</section>
+  </section>
 
+  <section class="cards_bs py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
 
-<section class="brand-banner py-3 bg-light">
-  <div class="container">
-    <div class="row justify-content-center align-items-center g-3 text-center">
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <i class="bi bi-tools fs-1 text-danger"></i>
+            <h5 class="mt-3 text-danger">Manutenção Especializada</h5>
+            <p>Equipe técnica com experiência em suspensões de alto desempenho.</p>
+          </div>
+        </div>
 
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/cannondale_logo.png" class="brand-logo img-fluid" alt="Cannondale">
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <i class="bi bi-shield-check fs-1 text-danger"></i>
+            <h5 class="mt-3 text-danger">Centro Autorizado</h5>
+            <p>Certificação com as principais marcas do mercado.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-white rounded shadow-sm h-100">
+            <i class="bi bi-award fs-1 text-danger"></i>
+            <h5 class="mt-3 text-danger">Peças Originais</h5>
+            <p>Reposição com peças de qualidade e procedência.</p>
+          </div>
+        </div>
+
       </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/easton_logo.png" class="brand-logo img-fluid" alt="Easton Cycling">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/fox_logo.png" class="brand-logo img-fluid" alt="Fox Racing Shox">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/garmin_logo.png" class="brand-logo img-fluid" alt="Garmin">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/hammerhead_logo.png" class="brand-logo img-fluid" alt="Hammerhead">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/magura_logo.png" class="brand-logo img-fluid" alt="Magura">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/quarq_logo.png" class="brand-logo img-fluid" alt="Quarq">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/raceface_logo.png" class="brand-logo img-fluid" alt="RaceFace">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/rockshox_logo.png" class="brand-logo img-fluid" alt="RockShox">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/squirt_logo.png" class="brand-logo img-fluid" alt="Squirt">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/sram_logo.png" class="brand-logo img-fluid" alt="SRAM">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/truativ_logo.png" class="brand-logo img-fluid" alt="Truativ">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/zipp_logo.png" class="brand-logo img-fluid" alt="Zipp">
-      </div>
-
-      <div class="col-4 col-sm-3 col-md-2">
-        <img src="/img/logos/prologo_logo.png" class="brand-logo img-fluid" alt="Prologo">
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- <section class="brand-carousel py-4 bg-light">
+
+  <section class="brand-banner py-3 bg-light">
+    <div class="container">
+      <div class="row justify-content-center align-items-center g-3 text-center">
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/cannondale_logo.png" class="brand-logo img-fluid" alt="Cannondale">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/easton_logo.png" class="brand-logo img-fluid" alt="Easton Cycling">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/fox_logo.png" class="brand-logo img-fluid" alt="Fox Racing Shox">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/garmin_logo.png" class="brand-logo img-fluid" alt="Garmin">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/hammerhead_logo.png" class="brand-logo img-fluid" alt="Hammerhead">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/magura_logo.png" class="brand-logo img-fluid" alt="Magura">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/quarq_logo.png" class="brand-logo img-fluid" alt="Quarq">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/raceface_logo.png" class="brand-logo img-fluid" alt="RaceFace">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/rockshox_logo.png" class="brand-logo img-fluid" alt="RockShox">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/squirt_logo.png" class="brand-logo img-fluid" alt="Squirt">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/sram_logo.png" class="brand-logo img-fluid" alt="SRAM">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/truativ_logo.png" class="brand-logo img-fluid" alt="Truativ">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/zipp_logo.png" class="brand-logo img-fluid" alt="Zipp">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/prologo_logo.png" class="brand-logo img-fluid" alt="Prologo">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/corsabikeparts_logo.png" class="brand-logo img-fluid" alt="CorsaBike Parts">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/proparts_logo.png" class="brand-logo img-fluid" alt="ProParts">
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="/img/logos/ceramicspeed_logo.png" class="brand-logo img-fluid" alt="Ceramicspeed">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="brand-carousel py-4 bg-light">
   <div class="container">
     <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner text-center">
@@ -251,17 +291,20 @@ body {
     <div class="row">
       <div class="col-md-6">
         <h3>Endereço:</h3>
-        <p> 
-          Avenida Presidente Epitácio Pessoa, 5088<br> 
+        <p>
+          Avenida Presidente Epitácio Pessoa, 5088<br>
           João Pessoa - PB, 58045-000 - Cabo Branco<br>
           CEP: 58045-000
-        </p>  
+        </p>
       </div>
-  
+
       <!-- Embed Google Maps -->
-    <div class="col-md-6">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4727.152874212914!2d-34.8250531!3d-7.1196285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18eb8822c3%3A0x7c131b12ac2a92f8!2sUpdown%20bike!5e1!3m2!1spt-BR!2sbr!4v1746029072326!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+      <div class="col-md-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4727.152874212914!2d-34.8250531!3d-7.1196285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18eb8822c3%3A0x7c131b12ac2a92f8!2sUpdown%20bike!5e1!3m2!1spt-BR!2sbr!4v1746029072326!5m2!1spt-BR!2sbr"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
   </section>
 
   <section id="contact_section" class="container-md mt-5">
@@ -270,57 +313,33 @@ body {
       Telefone: (83) 9999-9999<br>
     </p>
 
-      <!-- Instagram Embed -->
+    <!-- Instagram Embed -->
     <div class="mt-3">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/updownbike.pb/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/updownbike.pb/"
+        data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
     </div>
   </section>
 
-    <!-- Instagram Embed Script -->
+  <!-- Instagram Embed Script -->
   <script async src="//www.instagram.com/embed.js"></script>
 
   <!-- Botão WhatsApp -->
   <a href="https://wa.me/5511999999999" target="_blank" id="whatsapp-button">
-    <img class ="img-fluid"src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp Button">
+    <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp Button">
   </a>
 
   <!-- Import Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 
-    <footer class="text-white py-4" style="background-color: #c82333;">
-      <div class="container">
-        <div class="row text-center text-md-start">
-          <!-- <div class="col-md-4 mb-3">
-            <h5 class="fw-bold">Updown Bike</h5>
-            <p>
-              Oficina especializada em manutenção de suspensões e bicicletas de alto desempenho.
-            </p>
-          </div> -->
-
-          <div class="col-md-4 mb-3">
-            <h6 class="fw-bold">Contato</h6>
-            <p>📞 (99) 9999-9999</p>
-            <p>📍 Av. Presidente Epitácio Pessoa, 5088<br>João Pessoa - PB, 58045-000</p>
-            <p>✉️ contato@updownbike.com.br</p>
-          </div>
-
-          <div class="col-md-4 mb-3">
-            <h6 class="fw-bold">Social</h6>
-            <a href="https://www.instagram.com/updownbike.pb/" target="_blank" class="text-white me-2">
-              <i class="bi bi-instagram"></i> Instagram
-            </a><br>
-            <a href="https://wa.me/5511999999999" target="_blank" class="text-white me-2">
-              <i class="bi bi-whatsapp"></i> WhatsApp
-            </a>
-          </div>
-      </div>
-
-      <div class="text-center pt-3 border-white">
-        <small>&copy; 2025 All Rights Reserved</small>
-      </div>
-    </div>
-  </footer>
-
-
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
 </body>
 </html>

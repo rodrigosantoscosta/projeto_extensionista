@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,21 @@
   <!-- Adicionando icone para o website -->
     <link rel="website icon" type ="png" href="/img/icone_logo_pequena.png">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-</head>
+  <!-- Import BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
+  <!-- Importa icones do BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
+</head>
 <style>
+
 .navbar{
   background-color: #df1923e5;
 }
@@ -46,9 +58,6 @@
 }
 
 
-
-
-
 </style>
 
 <body>
@@ -73,10 +82,15 @@
         <div class="card shadow-sm">
           <div class="card-body">
             <p>
-              A tecnologia Brain da Specialized exige manutenção especializada para garantir seu funcionamento inteligente e eficiente. Na Updown Bike, realizamos a revisão completa do sistema, com desmontagem do conjunto, substituição de retentores, anéis de vedação e fluidos, além da sangria e calibração do módulo de inércia.
+              A tecnologia Brain da Specialized exige manutenção especializada para garantir seu funcionamento
+              inteligente e eficiente. Na Updown Bike, realizamos a revisão completa do sistema, com desmontagem do
+              conjunto, substituição de retentores, anéis de vedação e fluidos, além da sangria e calibração do módulo
+              de inércia.
             </p>
             <p>
-              Seguimos os padrões técnicos da Specialized e utilizamos ferramentas e peças homologadas para assegurar que a suspensão atue com precisão — firme nos trechos lisos e ativa nas irregularidades — mantendo a performance original da bike em alto nível.
+              Seguimos os padrões técnicos da Specialized e utilizamos ferramentas e peças homologadas para assegurar
+              que a suspensão atue com precisão — firme nos trechos lisos e ativa nas irregularidades — mantendo a
+              performance original da bike em alto nível.
             </p>
           </div>
         </div>
@@ -106,14 +120,15 @@
 
     <div class="row">
 
+
       <div class="col">
 
         <img src="/img/imgBrain/scs.jpg" alt="imagem de Scs da bike" class="card" style="width: 400px;margin: 10px 5px">
-      </div>
-      <div class="col">
+
 
         <img src="/img/imgBrain/spider.jpg" alt="imagem de spider de bike" class="card" style="width: 400px;margin: 10px 5px"> 
-      </div>
+
+
       <div class="col">
 
         <img src="/img/imgBrain/tampa_valvula.jpg" alt="imagem de tampa de valvula da bike" class="card" style="width: 400px;margin: 10px 5px"> 
@@ -198,6 +213,7 @@
             </div>
         </div>
 
+
         <div class="text-center pt-3 border-white">
           <small>&copy; 2025 All Rights Reserved</small>
         </div>
@@ -206,14 +222,26 @@
   </div>  
 
 
-
     <!-- Botão WhatsApp -->
     <a href="https://wa.me/5511999999999" target="_blank" id="whatsapp-button">
       <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="80" height="80">
     </a>
 
+
     <!-- Import Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   
+
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
 </body>
+
 </html>
