@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Updown Bike - Revisão Specialized Brain</title>
+  <!-- Adicionando icone para o website -->
+    <link rel="website icon" type ="png" href="/img/icone_logo_pequena.png">
 
   <!-- Import BS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,28 +22,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <style>
-  .navbar {
-    background-color: #df1923e5;
-  }
 
-  #introduction_img,
-  #introduction img {
-    border-radius: 15px;
-    border: 2px solid #ccc;
-  }
+.navbar{
+  background-color: #df1923e5;
+}
 
-  #whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    cursor: pointer;
-  }
+#introduction_img, #introduction img {
+  border-radius: 15px;
+  border: 2px solid #ccc;
+}
 
-  #whatsapp-button img {
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#whatsapp-button img {
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.card {
+  border: 1px solid #ddd;  
+  border-radius: 10px;      
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+  padding: 16px;  
+  background-color: #fff;  
+  transition: transform 0.3s ease-in-out;  
+}
+
+.card:hover {
+  transform: translateY(-5px);  
+}
+
+
 </style>
 
 <body>
@@ -82,54 +98,140 @@
     </div>
   </section>
 
-  <section id="location_section" class="container-md mt-5">
+<div >
+    <h2 class="text-center" style="margin:100px; font: optional;"> Algumas peças da Marca Specialized Brain</h2>
+    <div class="container-md" style="background-color: #020202;border-radius: 10px;margin-top: 200px;">
+      <div class="row" style="margin-top:100px;">
+
+      <div class="col">
+
+        <img src="/img/imgBrain/coroa.png" alt="imagem de coroa de bike" class="card" style="width: 400px;margin: 10px 5px">
+        
+      </div>
+      <div class="col">
+
+        <img src="/img/imgBrain/bico.png" alt="imagem de bico da bike" class="card" style="width: 400px;margin: 10px 5px">
+      </div>
+      <div class="col">
+
+        <img src="/img/imgBrain/cunhas.jpg" alt="imagem de cunhas da bike" class="card" style="width: 400px;margin: 10px 5px">
+      </div>
+    </div> 
+
     <div class="row">
-      <div class="col-md-6">
-        <h3>Endereço:</h3>
-        <p>
-          Avenida Presidente Epitácio Pessoa, 5088<br>
-          João Pessoa - PB, 58045-000 - Cabo Branco<br>
-          CEP: 58045-000
-        </p>
+
+
+      <div class="col">
+
+        <img src="/img/imgBrain/scs.jpg" alt="imagem de Scs da bike" class="card" style="width: 400px;margin: 10px 5px">
+
+
+        <img src="/img/imgBrain/spider.jpg" alt="imagem de spider de bike" class="card" style="width: 400px;margin: 10px 5px"> 
+
+
+      <div class="col">
+
+        <img src="/img/imgBrain/tampa_valvula.jpg" alt="imagem de tampa de valvula da bike" class="card" style="width: 400px;margin: 10px 5px"> 
       </div>
+    </div> 
+  </div>
+  </div>
 
-      <!-- Embed Google Maps -->
-      <div class="col-md-6">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4727.152874212914!2d-34.8250531!3d-7.1196285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18eb8822c3%3A0x7c131b12ac2a92f8!2sUpdown%20bike!5e1!3m2!1spt-BR!2sbr!4v1746029072326!5m2!1spt-BR!2sbr"
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+
+<div class="container-md">
+    <h2 class="text-center" style="margin-top: 150px; font-size: 60px;"> Vantagens da Brain</h2>
+  <div  style="border-radius: 10px;margin-top: 100px;">
+      <div   style="margin-top:100px;">
+      <div style="text-align: center; margin: 100px;background-color: #020202;color:#f0f8ff; border-radius: 10px 45px;" class="card">
+        <h2 style="font-style:oblique;">Melhora no desempenho</h2>
+        <P>Ideal para competições XC (cross-country), onde eficiência é crucial.</P>
       </div>
-    </div>
-  </section>
+      <div style="text-align:center; margin: 100px;background-color: #020202;color:#f0f8ff; border-radius: 10px 45px;"class="card">
+        <h2 style="font-style:oblique;">Automatização</h2>
+        <P>Elimina a necessidade de o ciclista acionar manualmente o bloqueio da suspensão.</P>
+      </div>
+      <div style="text-align:center; margin: 100px;background-color: #020202;color:#f0f8ff; border-radius: 10px 45px;"class="card">
+        <h2 style="font-style:oblique;">Versatilidade</h2>
+        <P >Adapta-se rapidamente a diferentes tipos de terreno.</P>
+      </div>
+    </div>   
+  </div>
+</div>      
+
+        
+
+  <div >
+    <h2 class="text-center" style="margin:100px; font: optional;"> Veja Revisão	dessas outras Marcas</h2>
+    <div class="container-md";border-radius: 10px;margin-top: 200px;>
+      <div class="row" style="margin-top:100px;">
+
+      <div class="col">
+        <a href="revisao_fox.html">
+          <img src="/img/logos/fox_logo.png" alt="logo da marca fox"   class="card" style="width: 360px;height:240px;margin: 10px 5px">
+        </a>
+        
+      </div>
+      <div class="col">
+        <a href="revisao_rockshox.html">
+          <img src="/img/logos/rockshox_logo.png" alt="logo da marca rockshox" class="card" style="width: 400px;margin: 10px 5px">
+        </a>
+      </div>
+      <div class="col">
+        <a href="revisao_lefty.html">
+          <img src="/img/logos/cannondale_logo.png" alt="logo da marca cannodale lefty" class="card" style="width: 400px;margin: 10px 5px">
+        </a>
+      </div>
+    </div> 
+  </div>
+
+  <footer class="text-white py-4" style="background-color: #c82333;margin-top: 300px;" >
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <!-- <div class="col-md-4 mb-3">
+              <h5 class="fw-bold">Updown Bike</h5>
+              <p>
+                Oficina especializada em manutenção de suspensões e bicicletas de alto desempenho.
+              </p>
+            </div> -->
+
+            <div class="col-md-4 mb-3">
+              <h6 class="fw-bold">Contato</h6>
+              <p>📞 (99) 9999-9999</p>
+              <p>📍 Av. Presidente Epitácio Pessoa, 5088<br>João Pessoa - PB, 58045-000</p>
+              <p>✉️ contato@updownbike.com.br</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <h6 class="fw-bold">Social</h6>
+              <a href="https://www.instagram.com/updownbike.pb/" target="_blank" class="text-white me-2">
+                <i class="bi bi-instagram"></i> Instagram
+              </a><br>
+              <a href="https://wa.me/5511999999999" target="_blank" class="text-white me-2">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+        </div>
 
 
+        <div class="text-center pt-3 border-white">
+          <small>&copy; 2025 All Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
+  </div>  
 
-  <section id="contact_section" class="container-md mt-5 mb-5">
-    <h3>Contato:</h3>
-    <p>
-      Telefone: (99) 9999-9999<br>
-    </p>
 
-    <!-- Instagram Embed -->
-    <div class="mt-3">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/updownbike.pb/"
-        data-instgrm-version="14" style="width:100%; max-width:540px; margin:auto;"></blockquote>
-    </div>
-  </section>
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511999999999" target="_blank" id="whatsapp-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="80" height="80">
+    </a>
 
-  <!-- Instagram Embed Script -->
-  <script async src="//www.instagram.com/embed.js"></script>
 
-  <!-- Botão WhatsApp -->
-  <a href="https://wa.me/5511999999999" target="_blank" id="whatsapp-button">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="80" height="80">
-  </a>
+    <!-- Import Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  
 
-  <!-- Import Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
 
   <div id="footer-container"></div>
   <script>
@@ -139,6 +241,7 @@
         document.getElementById('footer-container').innerHTML = data;
       });
   </script>
+
 </body>
 
 </html>
