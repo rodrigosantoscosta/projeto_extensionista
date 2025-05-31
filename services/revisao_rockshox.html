@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Updown Bike - Revisão Rockshox</title>
+  <!-- Adicionando icone para o website -->
+    <link rel="website icon" type ="png" href="/img/icone_logo_pequena.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<style>
+.navbar{
+  background-color: #df1923e5;
+}
+
+#introduction_img{
+  border-radius: 15px; border: 2px solid #ccc;
+}
+
+#introduction img{
+  border-radius: 15px; border: 2px solid #ccc;
+}
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#whatsapp-button img {
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.card {
+  border: 1px solid #ddd;  
+  border-radius: 10px;      
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+  padding: 16px;  
+  background-color: #fff;  
+  transition: transform 0.3s ease-in-out;  
+}
+
+.card:hover {
+  transform: translateY(-5px);  
+}
+</style>
+
+<body>
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch('/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
+
+  <div id="rockshox_service" class="container-md">
+    <h1>Rockshox/SRAM Service</h1>
+    <p>
+      Na Updown Bike, somos certificados para realizar manutenção completa em toda a linha de produtos RockShox. Isso inclui revisões em suspensões dianteiras, amortecedores traseiros, canotes retráteis e freios SRAM. Utilizamos ferramentas específicas, procedimentos homologados pela marca e peças originais, garantindo performance, segurança e durabilidade para o seu equipamento.
+    </p>
+    <h2>Intervalos de Revisão Rockshox/SRAM</h2>
+    <img src="/img/rockshox_service_interval.jpg" width="90%" alt="RockShox Service Intervals Table" class="card">
+  </div>
+
+  <div id="service_resume"class="container-md d-flex flex-row d-flex justify-content-center">
+
+  </div>
+
+
+<div class="container-md">
+    <h2 class="text-center" style="margin-top: 150px; font-size: 60px;"> Vantagens da Rockshox</h2>
+  <div  style="border-radius: 10px;margin-top: 100px;">
+      <div   style="margin-top:100px;">
+      <div style="text-align: center; margin: 100px;background-color: #020202;color:#f0f8ff; border-radius: 10px 45px;" class="card">
+        <h2 style="font-style:oblique;"> Excelente Custo-Benefício</h2>
+        <P>--> Ideal para quem quer alta performance sem extrapolar o orçamento. <--</P>
+      </div>
+      <div style="text-align:center; margin: 100px;background-color: #020202;color:#f0f8ff; border-radius: 10px 45px;"class="card">
+        <h2 style="font-style:oblique;">Boa Disponibilidade de Peças e Suporte</h2>
+        <P>--> RockShox tem ampla distribuição mundial, o que facilita encontrar peças de reposição, upgrades e kits de manutenção.<-- </P>
+      </div>
+      <div style="text-align:center; margin: 100px;background-color: #020202;color:#f0f8ff; border-radius: 10px 45px;"class="card">
+        <h2 style="font-style:oblique;">Manutenção Mais Simples e Econômica</h2>
+        <P > --> Mais fácil de encontrar peças e mais acessível para mecânicos e ciclistas autônomos <-- </P>
+      </div>
+    </div>   
+  </div>
+</div> 
+<div >
+    <h2 class="text-center" style="margin:100px; font: optional;"> Veja Revisão	de outras Marcas</h2>
+    <div class="container-md";border-radius: 10px;margin-top: 200px;>
+      <div class="row" style="margin-top:100px;">
+
+        <div class="col">
+          <a href="revisao_fox.html">
+            <img src="/img/logos/fox_logo.png" alt="logo da marca rockshox" class="card" style="width: 370px;height:240px;margin: 10px 5px">
+          </a>
+        </div>
+        <div class="col">
+          <a href="revisao_brain.html">
+            <img src="/img/logos/specialized-brain.png" alt="logo da Specialized Brain"   class="card" style="width: 370px;height:240px; margin: 10px 5px">
+          </a>
+          
+        </div>
+      <div class="col">
+        <a href="revisao_lefty.html">
+          <img src="/img/logos/cannondale_logo.png" alt="logo da marca cannodale lefty" class="card" style="width: 400px;margin: 10px 5px">
+        </a>
+      </div>
+    </div> 
+</div>
+
+  <footer class="text-white py-4" style="background-color: #c82333;margin-top: 300px;" >
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <!-- <div class="col-md-4 mb-3">
+              <h5 class="fw-bold">Updown Bike</h5>
+              <p>
+                Oficina especializada em manutenção de suspensões e bicicletas de alto desempenho.
+              </p>
+            </div> -->
+
+            <div class="col-md-4 mb-3">
+              <h6 class="fw-bold">Contato</h6>
+              <p>📞 (99) 9999-9999</p>
+              <p>📍 Av. Presidente Epitácio Pessoa, 5088<br>João Pessoa - PB, 58045-000</p>
+              <p>✉️ contato@updownbike.com.br</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <h6 class="fw-bold">Social</h6>
+              <a href="https://www.instagram.com/updownbike.pb/" target="_blank" class="text-white me-2">
+                <i class="bi bi-instagram"></i> Instagram
+              </a><br>
+              <a href="https://wa.me/5511999999999" target="_blank" class="text-white me-2">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+        </div>
+
+        <div class="text-center pt-3 border-white">
+          <small>&copy; 2025 All Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
+</div>  
+
+
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511999999999" target="_blank" id="whatsapp-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="80" height="80">
+    </a>
+
+    <!-- Import Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>  
